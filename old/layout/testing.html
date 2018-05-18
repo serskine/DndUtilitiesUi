@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Testing Page</title>
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Stuart Marr Erskine">
+    <meta name="description" content="Build and Measure 5e D&D Encounters">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/testing.css">
+
+    <!-- SCRIPTS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../scripts/util.js" type="text/javascript"></script>
+    <script src="../scripts/assert.js" type="text/javascript"></script>
+    <script src="../scripts/xml.js" type="text/javascript"></script>
+    <script src="../scripts/table.js" type="text/javascript"></script>
+    <script src="../scripts/message.js" type="text/javascript"></script>
+    <script src="../scripts/column_resizable/colResizable.min.js"></script>
+    <!-- Controller scripts -->
+    <script src="../scripts/controller/testController.js"></script>
+    <script src="../scripts/controller/encounterMeasureController.js"></script>
+
+    <!-- Logic Script -->
+    <script src="../scripts/testing.js" type="text/javascript"></script>
+</head>
+<body class="fill">
+<div id="bannerPane" class="banner"><h1>HTTP Testing</h1></div>
+<div id="contentPane" class="fill">
+    <table id="messageTable" width="100%">
+        <tr><th colspan="2">Request</th><th colspan="2">Response</th></tr>
+        <tr>
+            <!-- request columns -->
+            <td colspan="1">
+                <select id="requestMethod" class="input">
+                    <option value="GET" id="getMethod">GET</option>
+                    <option value="POST" id="postMethod">POST</option>
+                    <option value="PUT" id="putMethod">PUT</option>
+                    <option value="HEAD" id="headMethod">HEAD</option>
+                    <option value="DELETE" id="deleteMethod">DELETE</option>
+                    <option value="PATCH" id="patchMethod">PATCH</option>
+                    <option value="OPTIONS" id="optionMethod">OPTIONS</option>
+                </select>
+            </td>
+            <td colspan="1">
+                <input id="requestUrl" type="url" class="input"/>
+            </td>
+            <!-- response columns -->
+            <td colspan="1">
+                <div id="responseStatusCode" class="output"></div>
+            </td>
+            <td colspan="1">
+                <div id="responseStatusText" class="output"></div>
+            </td>
+        </tr>
+        <tr>
+            <!-- request columns -->
+            <td colspan="2"><textarea id="requestHeaders" class="input"></textarea></td>
+            <!-- response columns -->
+            <td colspan="2"><div id="responseHeaders" class="output"></div></td>
+        </tr>
+        <tr>
+            <!-- request columns -->
+            <td colspan="2"><textarea id="requestBody" class="input"></textarea></td>
+            <!-- response columns -->
+            <td colspan="2"><div id="responseBody" class="output"></div></td>
+        </tr>
+        <tr>
+            <!-- request columns -->
+            <td colspan="2"><button id="sendButton">Send</button></td>
+            <!-- response columns -->
+            <td colspan="2"><button id="clearButton">Clear</button></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

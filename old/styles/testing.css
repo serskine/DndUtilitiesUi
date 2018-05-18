@@ -1,0 +1,100 @@
+elem {
+    --row1-height: 30px;
+    --row2-height: 100px;
+    --row3-height: 400px;
+    --row4-height: 30px;
+    --column-width: 300px;
+}
+
+
+table {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    border: 1px solid black;
+    background-color: white;
+    font-family: Consolas;
+    font-size: smaller;
+}
+
+.output {
+    border: 1px solid red;
+    background-color: white;
+    font-family: Consolas;
+    font-size: smaller;
+    height: 100%;
+    width: 100%;
+}
+
+/***** REQUEST FIELDS *****/
+
+
+#requestMethod {
+    minWidth: 50px;
+    height: var(--row1-height);
+    width: 100%;
+}
+
+#requestUrl {
+    width: 100%;
+    height: var(--row1-height);
+    minWidth: 150px;
+}
+
+#requestHeaders {
+    height: 100px;
+    width: 100%;
+}
+
+#requestBody {
+    minWidth: 300px;
+    width: 100%;
+    height: 400px;
+}
+
+#sendButton {
+    width: 100%;
+    height: var(--row4-height);
+}
+
+
+/***** RESPONSE FIELDS *****/
+
+#responseStatusCode {
+    minWidth: 50px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+#responseStatusText {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    minWidth: 150px;
+}
+
+#responseHeaders {
+    minWidth: 300px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+#responseBody {
+    minWidth: 300px;
+    minHeight: 400px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+#clearButton {
+    width: 100%;
+    height: var(--row4-height);
+}
+
+#contentPane {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,33 @@
+#contentPane {
+    height: 100%;
+    width: 100%;
+    display: block;
+    align-self: stretch;
+}
+#alliesPane {
+    height: 100%;
+    align-self: stretch;
+    type: block;
+    float:left;
+}
+#enemiesPane {
+    height: 100%;
+    display: block;
+    float: left;
+}
+#enemiesControlPane {
+    background-color: red;
+    position: relative;
+    height: 50px;
+}
+#alliesControlPane {
+    background-color: blue;
+    position: relative;
+    height: 50px;
+}
+#enemySlider {
+    width: 100%;
+}
+#allySlider {
+    width: 100%;
+}
